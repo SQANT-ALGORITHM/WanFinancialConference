@@ -1,6 +1,6 @@
-# [Project name]
+# AI BOX Command Center
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A responsive, client-side UI prototype of a privacy-first, local-first AI desktop command center for personal and professional users.
 
 ## Run & Operate
 
@@ -30,11 +30,16 @@ _Populate as you build — non-obvious choices a reader couldn't infer from the 
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+The AI BOX web prototype provides Home, AI Workspace, Projects, Memory & Knowledge, Models & Tools, Guardian, Time Travel, and Settings. Inference, system metrics, permissions, approvals, and restore operations are demonstrations rather than real desktop capabilities.
+
+See `artifacts/ai-box/README.md` for prototype limitations and the engineering still required.
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+- Premium dark graphite UI with restrained electric-blue highlights.
+- “Built for Local. Our Own Design. Our Applications. Our Modules.”
+- “Privacy, ownership and offline independence.”
+- Keep demo data client-side. Do not add cloud AI calls, analytics, telemetry, or claims of verified privacy/security.
 
 ## Gotchas
 

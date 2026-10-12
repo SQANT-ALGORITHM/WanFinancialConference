@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "AI BOX Command Center"
+description = "A privacy-first, local-first AI desktop UI prototype with simulated AI workspace, projects, memory, models, Guardian controls and version history. All demo data stays client-side; no inference or security enforcement is connected."
+version = "1.0.0"
+id = "artifacts/ai-box"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21643
+
+[services.development]
+run = "pnpm --filter @workspace/ai-box run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ai-box", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/ai-box/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21643"
+BASE_PATH = "/"
